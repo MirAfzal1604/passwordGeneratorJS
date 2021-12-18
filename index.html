@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/smartPassword.css">
+    <title>password</title>
+</head>
+
+<body>
+    <div class="pw_box">
+        <div class="pw_container">
+            <div class="pw_header">
+                <div class="pw">
+                    <div id="pw">Password Here</div>
+                </div>
+            </div>
+            <div class="pw_body">
+                    <div class="form_control">
+                        <lable for="length">Password length <span style="color: red;">min-8 max-18</span></lable>
+                        <input type="number" id="len" value="8" min="8" max="18">
+                    </div>
+                    <div class="form_control">
+                        <lable for="upper">Contain Uppercase Letter</lable>
+                        <input type="checkbox" id="upper" checked>
+                    </div>
+                    <div class="form_control">
+                        <lable for="lower">Contain Lowercase Letter</lable>
+                        <input type="checkbox" id="lower">
+                    </div>
+                    <div class="form_control">
+                        <lable for="number">Contain Number</lable>
+                        <input type="checkbox" id="number" checked>
+                    </div>
+                    <div class="form_control">
+                        <lable for="symbol">Contain Symbol</lable>
+                        <input type="checkbox" id="symbol">
+                    </div>
+
+                    <button class="generate" id="generate">Generate number</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./smartPassword.js"></script>
+</body>
+
+</html>
